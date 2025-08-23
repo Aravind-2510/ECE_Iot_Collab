@@ -5,11 +5,11 @@ import time
 from dht import DHT11
 
 # ---- WiFi Credentials ----
-SSID = "YOUR_WIFI_SSID"
-PASSWORD = "YOUR_WIFI_PASSWORD"
+SSID = "hi"
+PASSWORD = "0987654321"
 
 # ---- ThingSpeak API ----
-API_KEY = "YOUR_WRITE_API_KEY"
+
 THINGSPEAK_URL = "http://api.thingspeak.com/update"
 
 # ---- Pins ----

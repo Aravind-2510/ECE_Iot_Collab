@@ -1,68 +1,42 @@
 Smart Irrigation & Crop Monitoring System using NodeMCU
+
 1. Introduction
-
-Agriculture is the backbone of our economy, and efficient water usage plays a vital role in increasing crop yield. Traditional irrigation methods often result in overwatering or underwatering, leading to wastage of water and reduced productivity.
-
+	Agriculture is the backbone of our economy, and efficient water usage plays a vital role in increasing crop yield. Traditional irrigation methods often result in overwatering or underwatering, leading to wastage of water and reduced productivity.
 This project proposes a Smart Irrigation & Crop Monitoring System using NodeMCU (ESP8266) with MicroPython, where soil moisture and environmental conditions are monitored, and irrigation is automated. The system also uploads live data to the ThingSpeak IoT platform, enabling remote monitoring.
 
 2. Objectives
-
-To automate irrigation based on soil moisture conditions.
-
-To monitor temperature, humidity, and soil moisture in real-time.
-
-To reduce water wastage using smart control.
-
-To provide remote monitoring using IoT (ThingSpeak cloud).
+	To automate irrigation based on soil moisture conditions.
+	To monitor temperature, humidity, and soil moisture in real-time.
+	To reduce water wastage using smart control.
+	To provide remote monitoring using IoT (ThingSpeak cloud).
 
 3. Components Required
-
-NodeMCU ESP8266 (Microcontroller with WiFi)
-
-Soil Moisture Sensor (Analog)
-
-DHT11 Sensor (Temperature & Humidity)
-
-Relay Module (to control water pump/solenoid valve)
-
-Mini Water Pump / Solenoid Valve
-
-Jumper wires, Breadboard, Power supply
+	NodeMCU ESP8266 (Microcontroller with WiFi)
+	Soil Moisture Sensor (Analog)
+	DHT11 Sensor (Temperature & Humidity)
+	Relay Module (to control water pump/solenoid valve)
+	Mini Water Pump / Solenoid Valve
+	Jumper wires, Breadboard, Power supply
 
 4. Block Diagram
-
-[Farmer’s Smartphone] ←→ ThingSpeak Cloud ←→ WiFi (NodeMCU) ← Sensors (Soil Moisture, DHT11) + Relay + Pump
+	[Farmer’s Smartphone] ←→ ThingSpeak Cloud ←→ WiFi (NodeMCU) ← Sensors (Soil Moisture, DHT11) + Relay + Pump
 
 5. Circuit Connections
-
-Soil Moisture Sensor → A0 of NodeMCU
-
-DHT11 Sensor → D2 (GPIO4)
-
-Relay Module → D5 (GPIO14)
-
-Pump → Relay Output
-
-VCC → 3.3V/5V, GND → GND
+	Soil Moisture Sensor → A0 of NodeMCU
+	DHT11 Sensor → D2 (GPIO4)
+	Relay Module → D5 (GPIO14)
+	Pump → Relay Output
+	VCC → 3.3V/5V, GND → GND
 
 6. Working Principle
-
-NodeMCU reads soil moisture from the analog sensor.
-
-If soil is dry (below threshold), NodeMCU switches Relay ON → Water Pump ON.
-
-If soil is wet, NodeMCU switches Relay OFF → Pump OFF.
-
-Temperature and humidity are read from DHT11.
-
-All values are uploaded to ThingSpeak Cloud.
-
-Farmer can monitor real-time data from anywhere using a smartphone or computer.
+	NodeMCU reads soil moisture from the analog sensor.
+	If soil is dry (below threshold), NodeMCU switches Relay ON → Water Pump ON.
+	If soil is wet, NodeMCU switches Relay OFF → Pump OFF.
+	Temperature and humidity are read from DHT11.
+	All values are uploaded to ThingSpeak Cloud.
+	Farmer can monitor real-time data from anywhere using a smartphone or computer.
 
 7. Software & Tools
-
-MicroPython Firmware (flashed on NodeMCU)
-
-uPyCraft / Thonny IDE (to write & upload Python code)
-
-ThingSpeak IoT Platform (for real-time monitoring)
+	MicroPython Firmware (flashed on NodeMCU)
+	uPyCraft / Thonny IDE (to write & upload Python code)
+	ThingSpeak IoT Platform (for real-time monitoring)
