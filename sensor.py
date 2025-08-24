@@ -65,3 +65,6 @@ while True:
         print("Error:", e)
 
     time.sleep(20)  # ThingSpeak update interval
+
+print("Reading soil moisture sensor data")
+print("sending data to cloud server")

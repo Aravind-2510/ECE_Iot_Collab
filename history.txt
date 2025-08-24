@@ -1,3 +1,4 @@
+* d79e646 upload the history file into the local repository
 * 5962ca3 after some changes done in my files
 * fc9ea34 after edit the python and text files
 * 87bb0dd the intial commit of my files
