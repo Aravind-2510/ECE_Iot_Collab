@@ -1,4 +1,4 @@
-Smart Irrigation & Crop Monitoring System using NodeMCU
+Update from collaborator: Added notes for cloud testing Smart Irrigation & Crop Monitoring System using NodeMCU
 
 1. Introduction
 	Agriculture is the backbone of our economy, and efficient water usage plays a vital role in increasing crop yield. Traditional irrigation methods often result in overwatering or underwatering, leading to wastage of water and reduced productivity.
